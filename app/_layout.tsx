@@ -1,5 +1,14 @@
+//* //
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+
+//* EXPO ROUTER //
 import { Stack } from "expo-router";
 
+//* ROOT //
 export default function RootLayout() {
-  return <Stack />;
+  return (
+    <GestureHandlerRootView>
+      <Stack />
+    </GestureHandlerRootView>
+  );
 }
