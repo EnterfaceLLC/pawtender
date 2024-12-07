@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Buddy",
+    "age": 3,
+    "breed": "Golden Retriever",
+    "gender": "Male",
+    "type": "Dog",
+    "image": "https://images.pexels.com/photos/3397939/pexels-photo-3397939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 2,
+    "name": "Whiskers",
+    "age": 2,
+    "breed": "Maine Coon",
+    "gender": "Female",
+    "type": "Cat",
+    "image": "https://images.pexels.com/photos/19435364/pexels-photo-19435364/free-photo-of-a-red-cat-with-a-collar-on-looking-up.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 3,
+    "name": "Thumper",
+    "age": 1,
+    "breed": "Holland Lop",
+    "gender": "Male",
+    "type": "Rabbit",
+    "image": "https://images.pexels.com/photos/19904640/pexels-photo-19904640/free-photo-of-a-small-rabbit-is-standing-on-a-black-background.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Luna",
+    "age": 1,
+    "breed": "Labrador Retriever",
+    "gender": "Female",
+    "type": "Dog",
+    "image": "https://images.pexels.com/photos/1790444/pexels-photo-1790444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 5,
+    "name": "Mittens",
+    "age": 4,
+    "breed": "Siamese",
+    "gender": "Female",
+    "type": "Cat",
+    "image": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 6,
+    "name": "Cleo",
+    "age": 3,
+    "breed": "Bengal",
+    "gender": "Female",
+    "type": "Cat",
+    "image": "https://images.pexels.com/photos/1108598/pexels-photo-1108598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 7,
+    "name": "Bella",
+    "age": 2,
+    "breed": "Beagle",
+    "gender": "Female",
+    "type": "Dog",
+    "image": "https://images.pexels.com/photos/54386/pexels-photo-54386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 8,
+    "name": "Shadow",
+    "age": 6,
+    "breed": "Persian",
+    "gender": "Male",
+    "type": "Cat",
+    "image": "https://images.pexels.com/photos/4079248/pexels-photo-4079248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 9,
+    "name": "Rocky",
+    "age": 4,
+    "breed": "Bulldog",
+    "gender": "Male",
+    "type": "Dog",
+    "image": "https://images.pexels.com/photos/26150686/pexels-photo-26150686/free-photo-of-english-bulldog-dog-with-tongue-out.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 10,
+    "name": "Daisy",
+    "age": 1,
+    "breed": "Ragdoll",
+    "gender": "Female",
+    "type": "Cat",
+    "image": "https://images.pexels.com/photos/29616976/pexels-photo-29616976/free-photo-of-close-up-portrait-of-a-blue-eyed-ragdoll-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 11,
+    "name": "Nibbles",
+    "age": 2,
+    "breed": "American Guinea Pig",
+    "gender": "Male",
+    "type": "Guinea Pig",
+    "image": "https://images.pexels.com/photos/7588704/pexels-photo-7588704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 12,
+    "name": "Fluffy",
+    "age": 1,
+    "breed": "Lionhead Rabbit",
+    "gender": "Female",
+    "type": "Rabbit",
+    "image": "https://images.pexels.com/photos/19958072/pexels-photo-19958072/free-photo-of-close-up-of-a-pet-rabbit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 13,
+    "name": "Rex",
+    "age": 5,
+    "breed": "German Shepherd",
+    "gender": "Male",
+    "type": "Dog",
+    "image": "https://images.pexels.com/photos/3709026/pexels-photo-3709026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 14,
+    "name": "Patches",
+    "age": 3,
+    "breed": "Calico",
+    "gender": "Female",
+    "type": "Cat",
+    "image": "https://images.pexels.com/photos/29653823/pexels-photo-29653823/free-photo-of-portrait-of-a-curious-calico-cat-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  },
+  {
+    "id": 15,
+    "name": "Snowball",
+    "age": 2,
+    "breed": "Dwarf Rabbit",
+    "gender": "Male",
+    "type": "Rabbit",
+    "image": "https://images.pexels.com/photos/19904639/pexels-photo-19904639/free-photo-of-a-rabbit-is-sitting-on-a-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  }
+]

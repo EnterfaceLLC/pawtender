@@ -1,226 +1,118 @@
-//* EXPO ROUTER //
-import { router } from "expo-router";
+//* REACT, RN //
+import * as React from "react";
+import { Image, StyleSheet, Text, View, Dimensions } from "react-native";
 
-import FontAwesome from "@expo/vector-icons/FontAwesome";
-
-//* RN //
-import {
-  Dimensions,
-  Text,
-  View,
-  StyleSheet,
-  Image,
-  Pressable,
-} from "react-native";
-
-//* SWIPEDECK //
-import { SwipeDeck } from "react-native-swipeable-deck";
-
-//* DIMENSIONS FN)
-const { width, height } = Dimensions.get("screen");
+//* RN TINDER CARD //
+import { TinderCard } from "rn-tinder-card";
 
 //* MOCK DATA //
-const data = [
-  {
-    id: 1,
-    name: "Buddy",
-    age: 3,
-    breed: "Golden Retriever",
-    image: "https://picsum.photos/id/237/300/300",
-    type: "Dog",
-  },
-  {
-    id: 2,
-    name: "Whiskers",
-    age: 2,
-    breed: "Maine Coon",
-    image: "https://picsum.photos/id/1074/300/300",
-    type: "Cat",
-  },
-  {
-    id: 3,
-    name: "Luna",
-    age: 1,
-    breed: "Labrador Retriever",
-    image: "https://picsum.photos/id/237/300/300",
-    type: "Dog",
-  },
-  {
-    id: 4,
-    name: "Mittens",
-    age: 4,
-    breed: "Siamese",
-    image: "https://picsum.photos/id/1062/300/300",
-    type: "Cat",
-  },
-  {
-    id: 5,
-    name: "Max",
-    age: 5,
-    breed: "German Shepherd",
-    image: "https://picsum.photos/id/659/300/300",
-    type: "Dog",
-  },
-  {
-    id: 6,
-    name: "Cleo",
-    age: 3,
-    breed: "Bengal",
-    image: "https://picsum.photos/id/237/300/300",
-    type: "Cat",
-  },
-  {
-    id: 7,
-    name: "Bella",
-    age: 2,
-    breed: "Beagle",
-    image: "https://picsum.photos/id/237/300/300",
-    type: "Dog",
-  },
-  {
-    id: 8,
-    name: "Shadow",
-    age: 6,
-    breed: "Persian",
-    image: "https://picsum.photos/id/237/300/300",
-    type: "Cat",
-  },
-  {
-    id: 9,
-    name: "Rocky",
-    age: 4,
-    breed: "Bulldog",
-    image: "https://picsum.photos/id/237/300/300",
-    type: "Dog",
-  },
-  {
-    id: 10,
-    name: "Daisy",
-    age: 1,
-    breed: "Ragdoll",
-    image: "https://picsum.photos/id/1025/300/300",
-    type: "Cat",
-  },
-];
+import pets from "../../assets/data/mock.json";
 
-//* TYPES //
-type itemProps = {
-  id: number;
-  name: string;
-  age: number;
-  breed: string;
-  image: string;
-  type: string;
-};
+const { width, height } = Dimensions.get("screen");
 
 //* WELCOME SCREEN //
-export default function Index() {
-  const renderCard = (item: itemProps) => {
+export default function Welcome() {
+  const OverlayRight = () => {
     return (
-      <View style={styles.card}>
-        <View>
-          <Image
-            source={{ uri: item.image }}
-            style={styles.image}
-            resizeMode="cover"
-          />
-
-          <View style={styles.infoContnr}>
-            <View>
-              <Text style={styles.title}>{item.name}</Text>
-              <Text style={styles.subTitle}>{item.breed}</Text>
-            </View>
-            <FontAwesome
-              name="paw"
-              size={35}
-              color="green"
-              onPress={() => router.push("/profile")}
-            />
-            <FontAwesome name="heart" size={35} color="red" />
-          </View>
-        </View>
+      <View
+        style={[
+          styles.overlayLabelContainer,
+          {
+            backgroundColor: "pink",
+          },
+        ]}
+      >
+        <Text style={styles.overlayLabelText}>Love</Text>
       </View>
     );
   };
-
-  const onSwipeRight = (item: any) => {
-    console.log(item);
-  };
-
-  const onSwipeLeft = (item: any) => {
-    console.log(item);
-  };
-
-  const renderNoMoreCards = () => {
+  const OverlayLeft = () => {
     return (
-      <View style={styles.card}>
-        <Text>Be sure to see</Text>
-        <Text>the pets you liked!</Text>
+      <View
+        style={[
+          styles.overlayLabelContainer,
+          {
+            backgroundColor: "green",
+          },
+        ]}
+      >
+        <Text style={styles.overlayLabelText}>Like</Text>
       </View>
     );
   };
-
-  const handleEndReached = () => {
-    console.log("End of cards reached");
+  const OverlayTop = () => {
+    return (
+      <View
+        style={[
+          styles.overlayLabelContainer,
+          {
+            backgroundColor: "blue",
+          },
+        ]}
+      >
+        <Text style={styles.overlayLabelText}>I Need</Text>
+      </View>
+    );
   };
 
   return (
-    <View style={styles.main}>
-      <Text>Swipe Left or Right</Text>
-      <SwipeDeck
-        renderCard={renderCard}
-        data={data}
-        indentSideMultiplier={0}
-        indentTopMultiplier={0.5}
-        onSwipeRight={onSwipeRight}
-        onSwipeLeft={onSwipeLeft}
-        renderNoMoreCards={renderNoMoreCards}
-        handleEndReached={handleEndReached}
-      />
+    <View style={styles.wrapper}>
+      {pets.map((item, index) => {
+        return (
+          <View
+            style={styles.cardContainer}
+            pointerEvents="box-none"
+            key={index}
+          >
+            <TinderCard
+              cardWidth={width - 50}
+              cardHeight={height / 2}
+              OverlayLabelRight={OverlayRight}
+              OverlayLabelLeft={OverlayLeft}
+              OverlayLabelTop={OverlayTop}
+              cardStyle={styles.card}
+              onSwipedRight={() => {
+                console.log("Swiped right");
+              }}
+              onSwipedTop={() => {
+                console.log("Swiped Top");
+              }}
+              onSwipedLeft={() => {
+                console.log("Swiped left");
+              }}
+            >
+              <Image source={{ uri: item.image }} style={styles.image} />
+            </TinderCard>
+          </View>
+        );
+      })}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  main: {
+  wrapper: {
     flex: 1,
-    backgroundColor: "#FEFEFE",
+  },
+  cardContainer: {
+    ...StyleSheet.absoluteFillObject,
+    justifyContent: "center",
+    alignItems: "center",
   },
   card: {
-    marginTop: 25,
-    alignSelf: "center",
-    width: width - 25,
-    height: height / 2 + 25,
-    backgroundColor: "#F0F0F0",
-    borderWidth: 0.5,
-    borderColor: "#D0D0D0",
-    borderRadius: 15,
-    // padding: 10,
+    borderRadius: 40,
   },
-  infoContnr: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "flex-end",
+  image: {
     width: "100%",
-    padding: 5,
-    left: 0,
-    bottom: 0,
-    zIndex: 10,
-    position: "absolute",
-    // backgroundColor: "lightgrey",
+    height: "100%",
+    borderRadius: 40,
   },
-  image: { width: "100%", height: "100%", borderRadius: 10 },
-  title: {
-    fontSize: 30,
-    color: "white",
-    fontWeight: "500",
+  overlayLabelContainer: {
+    width: "100%",
+    height: "100%",
+    borderRadius: 40,
+    justifyContent: "center",
+    alignItems: "center",
   },
-  subTitle: {
-    fontSize: 18,
-    color: "white",
-    padding: 5,
-    // backgroundColor: "lightgrey",
-    fontWeight: "500",
-    borderRadius: 5,
-  },
+  overlayLabelText: { color: "white", fontSize: 32, fontWeight: "bold" },
 });
