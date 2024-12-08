@@ -1,21 +1,35 @@
-import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { Tabs } from 'expo-router';
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import Ionicons from '@expo/vector-icons/Ionicons';
+import { Tabs } from "expo-router";
+import { colors } from "../theme/colors";
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'teal' }}>
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: colors.green,
+        tabBarInactiveTintColor: colors.grey,
+        tabBarStyle: { backgroundColor: colors.darker },
+        headerStyle: { backgroundColor: colors.green },
+      }}
+    >
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Welcome',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+          headerShown: false,
+          title: "Home",
+          tabBarIcon: ({ color }) => (
+            <FontAwesome size={22} name="paw" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="settings"
         options={{
-          title: 'Settings',
-          tabBarIcon: ({ color }) => <FontAwesome size={28} name="cog" color={color} />,
+          title: "Menu",
+          tabBarIcon: ({ color }) => (
+            <Ionicons name="menu-sharp" size={22} color={color} />
+          ),
         }}
       />
     </Tabs>

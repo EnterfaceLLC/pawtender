@@ -1,12 +1,29 @@
 //* REACT, RN //
 import * as React from "react";
-import { Image, StyleSheet, Text, View, Dimensions } from "react-native";
+import {
+  Image,
+  StyleSheet,
+  Text,
+  View,
+  Dimensions,
+  StatusBar,
+  Pressable,
+} from "react-native";
 
 //* RN TINDER CARD //
 import { TinderCard } from "rn-tinder-card";
 
+//* EXPO ROUTER //F
+import { router } from "expo-router";
+
+//* ICON //
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import Ionicons from "@expo/vector-icons/Ionicons";
+import AntDesign from "@expo/vector-icons/AntDesign";
+
 //* MOCK DATA //
 import pets from "../../assets/data/mock.json";
+import { colors } from "../theme/colors";
 
 const { width, height } = Dimensions.get("screen");
 
@@ -18,11 +35,11 @@ export default function Welcome() {
         style={[
           styles.overlayLabelContainer,
           {
-            backgroundColor: "pink",
+            backgroundColor: colors.love,
           },
         ]}
       >
-        <Text style={styles.overlayLabelText}>Love</Text>
+        <Text style={styles.overlayLoveText}>I Love</Text>
       </View>
     );
   };
@@ -32,11 +49,11 @@ export default function Welcome() {
         style={[
           styles.overlayLabelContainer,
           {
-            backgroundColor: "green",
+            backgroundColor: colors.like,
           },
         ]}
       >
-        <Text style={styles.overlayLabelText}>Like</Text>
+        <Text style={styles.overlayLikeText}>I Like</Text>
       </View>
     );
   };
@@ -46,11 +63,11 @@ export default function Welcome() {
         style={[
           styles.overlayLabelContainer,
           {
-            backgroundColor: "blue",
+            backgroundColor: colors.need,
           },
         ]}
       >
-        <Text style={styles.overlayLabelText}>I Need</Text>
+        <Text style={styles.overlayNeedText}>I Need</Text>
       </View>
     );
   };
@@ -66,7 +83,7 @@ export default function Welcome() {
           >
             <TinderCard
               cardWidth={width - 50}
-              cardHeight={height / 2}
+              cardHeight={height / 2 + 75}
               OverlayLabelRight={OverlayRight}
               OverlayLabelLeft={OverlayLeft}
               OverlayLabelTop={OverlayTop}
@@ -82,10 +99,34 @@ export default function Welcome() {
               }}
             >
               <Image source={{ uri: item.image }} style={styles.image} />
+              <View style={styles.linkContnr}>
+                <Pressable style={styles.iconContnr}>
+                  <Ionicons
+                    name="happy-outline"
+                    size={30}
+                    color={colors.like}
+                  />
+                </Pressable>
+
+                <Pressable style={styles.iconContnr}>
+                  <AntDesign name="staro" size={30} color={colors.blue} />
+                </Pressable>
+
+                <Pressable style={styles.iconContnr}>
+                  <FontAwesome name="heart-o" size={30} color={colors.love} />
+                </Pressable>
+              </View>
+
+              <View style={styles.cardInfo}>
+                <Text style={styles.name}>{item.name}</Text>
+                <Text style={styles.breed}>{item.breed}</Text>
+              </View>
             </TinderCard>
           </View>
         );
       })}
+
+      <StatusBar barStyle={"light-content"} />
     </View>
   );
 }
@@ -93,6 +134,7 @@ export default function Welcome() {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
+    backgroundColor: colors.dark,
   },
   cardContainer: {
     ...StyleSheet.absoluteFillObject,
@@ -100,19 +142,52 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   card: {
-    borderRadius: 40,
+    borderRadius: 30,
   },
   image: {
     width: "100%",
     height: "100%",
-    borderRadius: 40,
+    borderRadius: 30,
+  },
+  linkContnr: {
+    top: 0,
+    gap: 30,
+    right: 0,
+    padding: 15,
+    width: "100%",
+    position: "absolute",
+    flexDirection: "row",
+    justifyContent: "space-around",
+  },
+  iconContnr: {
+    padding: 9,
+    borderRadius: 20,
+    backgroundColor: colors.dark,
+  },
+  cardInfo: {
+    right: 0,
+    bottom: 0,
+    padding: 15,
+    position: "absolute",
+  },
+  name: {
+    fontSize: 34,
+    color: "white",
+    fontWeight: "700",
+  },
+  breed: {
+    fontSize: 20,
+    color: "white",
+    fontWeight: "500",
   },
   overlayLabelContainer: {
     width: "100%",
     height: "100%",
-    borderRadius: 40,
-    justifyContent: "center",
+    borderRadius: 30,
     alignItems: "center",
+    justifyContent: "center",
   },
-  overlayLabelText: { color: "white", fontSize: 32, fontWeight: "bold" },
+  overlayNeedText: { color: colors.needTxt, fontSize: 32, fontWeight: "bold" },
+  overlayLoveText: { color: colors.loveTxt, fontSize: 32, fontWeight: "bold" },
+  overlayLikeText: { color: colors.likeTxt, fontSize: 32, fontWeight: "bold" },
 });
