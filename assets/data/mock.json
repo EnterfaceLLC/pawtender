@@ -7,6 +7,7 @@
     "gender": "Male",
     "type": "Dog",
     "image": "https://images.pexels.com/photos/3397939/pexels-photo-3397939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/2795691/2795691-uhd_2560_1440_25fps.mp4",
     "bio": {
       "description": "Buddy is an energetic and playful companion who loves long walks and fetching tennis balls.",
       "specialNeeds": "None",
@@ -21,6 +22,7 @@
     "gender": "Female",
     "type": "Cat",
     "image": "https://images.pexels.com/photos/19435364/pexels-photo-19435364/free-photo-of-a-red-cat-with-a-collar-on-looking-up.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5345981/5345981-hd_1920_1080_24fps.mp4",
     "bio": {
       "description": "Whiskers is a gentle and affectionate cat who enjoys cuddles and watching birds through the window.",
       "specialNeeds": "None",
@@ -35,6 +37,7 @@
     "gender": "Male",
     "type": "Rabbit",
     "image": "https://images.pexels.com/photos/19904640/pexels-photo-19904640/free-photo-of-a-small-rabbit-is-standing-on-a-black-background.jpeg",
+    "video": "https://videos.pexels.com/video-files/5290685/5290685-hd_1920_1080_25fps.mp4",
     "bio": {
       "description": "Thumper is a curious rabbit who loves hopping around and munching on fresh veggies.",
       "specialNeeds": "None",
@@ -49,6 +52,7 @@
     "gender": "Female",
     "type": "Dog",
     "image": "https://images.pexels.com/photos/1790444/pexels-photo-1790444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/2795691/2795691-uhd_2560_1440_25fps.mp4",
     "bio": {
       "description": "Luna is a loyal and loving dog who enjoys swimming and playing with other pets.",
       "specialNeeds": "None",
@@ -63,6 +67,7 @@
     "gender": "Female",
     "type": "Cat",
     "image": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5345981/5345981-hd_1920_1080_24fps.mp4",
     "bio": {
       "description": "Mittens is a quiet and independent cat who loves cozying up in sunny spots.",
       "specialNeeds": "Needs a quiet home with no other pets.",
@@ -77,6 +82,7 @@
     "gender": "Female",
     "type": "Cat",
     "image": "https://images.pexels.com/photos/1108598/pexels-photo-1108598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5345981/5345981-hd_1920_1080_24fps.mp4",
     "bio": {
       "description": "Cleo is an adventurous and intelligent cat who enjoys interactive toys and climbing.",
       "specialNeeds": "None",
@@ -91,6 +97,7 @@
     "gender": "Female",
     "type": "Dog",
     "image": "https://images.pexels.com/photos/54386/pexels-photo-54386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/2795691/2795691-uhd_2560_1440_25fps.mp4",
     "bio": {
       "description": "Bella is a sweet and friendly dog who loves sniffing trails and meeting new people.",
       "specialNeeds": "None",
@@ -105,6 +112,7 @@
     "gender": "Male",
     "type": "Cat",
     "image": "https://images.pexels.com/photos/4079248/pexels-photo-4079248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5345981/5345981-hd_1920_1080_24fps.mp4",
     "bio": {
       "description": "Shadow is a calm and regal cat who loves gentle grooming and lounging in quiet spaces.",
       "specialNeeds": "Requires daily eye cleaning due to breed characteristics.",
@@ -119,6 +127,7 @@
     "gender": "Male",
     "type": "Dog",
     "image": "https://images.pexels.com/photos/26150686/pexels-photo-26150686/free-photo-of-english-bulldog-dog-with-tongue-out.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/2795691/2795691-uhd_2560_1440_25fps.mp4",
     "bio": {
       "description": "Rocky is a charming and laid-back dog who enjoys short walks and lots of belly rubs.",
       "specialNeeds": "Requires regular skin care due to sensitivity.",
@@ -133,6 +142,7 @@
     "gender": "Female",
     "type": "Cat",
     "image": "https://images.pexels.com/photos/29616976/pexels-photo-29616976/free-photo-of-close-up-portrait-of-a-blue-eyed-ragdoll-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5345981/5345981-hd_1920_1080_24fps.mp4",
     "bio": {
       "description": "Daisy is a playful and affectionate kitten who loves chasing feather toys and snuggling.",
       "specialNeeds": "None",
@@ -147,6 +157,7 @@
     "gender": "Male",
     "type": "Guinea Pig",
     "image": "https://images.pexels.com/photos/7588704/pexels-photo-7588704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/15752980/15752980-uhd_2560_1440_24fps.mp4",
     "bio": {
       "description": "Nibbles is a friendly and social guinea pig who loves munching on carrots and hay.",
       "specialNeeds": "None",
@@ -161,6 +172,7 @@
     "gender": "Female",
     "type": "Rabbit",
     "image": "https://images.pexels.com/photos/19958072/pexels-photo-19958072/free-photo-of-close-up-of-a-pet-rabbit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5290685/5290685-hd_1920_1080_25fps.mp4",
     "bio": {
       "description": "Fluffy is a gentle and curious rabbit who enjoys being petted and exploring her environment.",
       "specialNeeds": "None",
@@ -175,6 +187,7 @@
     "gender": "Male",
     "type": "Dog",
     "image": "https://images.pexels.com/photos/3709026/pexels-photo-3709026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/2795691/2795691-uhd_2560_1440_25fps.mp4",
     "bio": {
       "description": "Rex is a loyal and protective dog who loves learning new commands and playing fetch.",
       "specialNeeds": "None",
@@ -189,6 +202,7 @@
     "gender": "Female",
     "type": "Cat",
     "image": "https://images.pexels.com/photos/29653823/pexels-photo-29653823/free-photo-of-portrait-of-a-curious-calico-cat-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5345981/5345981-hd_1920_1080_24fps.mp4",
     "bio": {
       "description": "Patches is a playful and curious cat who enjoys climbing and exploring her surroundings.",
       "specialNeeds": "None",
@@ -203,6 +217,7 @@
     "gender": "Male",
     "type": "Rabbit",
     "image": "https://images.pexels.com/photos/19904639/pexels-photo-19904639/free-photo-of-a-rabbit-is-sitting-on-a-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "video": "https://videos.pexels.com/video-files/5290685/5290685-hd_1920_1080_25fps.mp4",
     "bio": {
       "description": "Snowball is a sweet and quiet rabbit who enjoys fresh greens and gentle cuddles.",
       "specialNeeds": "None",

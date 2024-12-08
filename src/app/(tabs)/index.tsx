@@ -25,6 +25,7 @@ import AntDesign from "@expo/vector-icons/AntDesign";
 import pets from "../../../assets/data/mock.json";
 import { colors } from "../../theme/colors";
 
+//* DIMENSIONS //
 const { width, height } = Dimensions.get("screen");
 
 //* WELCOME SCREEN //
@@ -99,8 +100,10 @@ export default function Welcome() {
                     id: item.id,
                     name: item.name,
                     image: item?.image,
+                    video: item.video,
                     breed: item.breed,
                     age: item.age,
+                    type: item.type,
                     des: item.bio.description,
                     need: item.bio.specialNeeds,
                     story: item.bio.history,
@@ -121,7 +124,26 @@ export default function Welcome() {
                   />
                 </Pressable>
 
-                <Pressable style={styles.iconContnr}>
+                <Pressable
+                  style={styles.iconContnr}
+                  onPress={() =>
+                    router.push({
+                      pathname: "/profile",
+                      params: {
+                        id: item.id,
+                        name: item.name,
+                        image: item?.image,
+                        video: item.video,
+                        breed: item.breed,
+                        age: item.age,
+                        type: item.type,
+                        des: item.bio.description,
+                        need: item.bio.specialNeeds,
+                        story: item.bio.history,
+                      },
+                    })
+                  }
+                >
                   <AntDesign name="staro" size={30} color={colors.blue} />
                 </Pressable>
 

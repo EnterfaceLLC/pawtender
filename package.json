@@ -40,7 +40,8 @@
     "react-native-screens": "~4.1.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
-    "rn-tinder-card": "^1.7.0"
+    "rn-tinder-card": "^1.7.0",
+    "expo-video": "~2.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
