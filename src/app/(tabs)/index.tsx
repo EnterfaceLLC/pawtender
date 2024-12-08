@@ -22,8 +22,8 @@ import Ionicons from "@expo/vector-icons/Ionicons";
 import AntDesign from "@expo/vector-icons/AntDesign";
 
 //* MOCK DATA //
-import pets from "../../assets/data/mock.json";
-import { colors } from "../theme/colors";
+import pets from "../../../assets/data/mock.json";
+import { colors } from "../../theme/colors";
 
 const { width, height } = Dimensions.get("screen");
 
@@ -93,6 +93,19 @@ export default function Welcome() {
               }}
               onSwipedTop={() => {
                 console.log("Swiped Top");
+                router.push({
+                  pathname: "/profile",
+                  params: {
+                    id: item.id,
+                    name: item.name,
+                    image: item?.image,
+                    breed: item.breed,
+                    age: item.age,
+                    des: item.bio.description,
+                    need: item.bio.specialNeeds,
+                    story: item.bio.history,
+                  },
+                });
               }}
               onSwipedLeft={() => {
                 console.log("Swiped left");
@@ -143,6 +156,8 @@ const styles = StyleSheet.create({
   },
   card: {
     borderRadius: 30,
+    borderWidth: 1,
+    borderColor: colors.white,
   },
   image: {
     width: "100%",

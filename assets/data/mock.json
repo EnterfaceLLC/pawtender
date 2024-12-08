@@ -6,7 +6,12 @@
     "breed": "Golden Retriever",
     "gender": "Male",
     "type": "Dog",
-    "image": "https://images.pexels.com/photos/3397939/pexels-photo-3397939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/3397939/pexels-photo-3397939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Buddy is an energetic and playful companion who loves long walks and fetching tennis balls.",
+      "specialNeeds": "None",
+      "history": "Rescued from a local farm where he was abandoned as a puppy."
+    }
   },
   {
     "id": 2,
@@ -15,7 +20,12 @@
     "breed": "Maine Coon",
     "gender": "Female",
     "type": "Cat",
-    "image": "https://images.pexels.com/photos/19435364/pexels-photo-19435364/free-photo-of-a-red-cat-with-a-collar-on-looking-up.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/19435364/pexels-photo-19435364/free-photo-of-a-red-cat-with-a-collar-on-looking-up.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Whiskers is a gentle and affectionate cat who enjoys cuddles and watching birds through the window.",
+      "specialNeeds": "None",
+      "history": "Surrendered by her previous owner due to financial difficulties."
+    }
   },
   {
     "id": 3,
@@ -24,7 +34,12 @@
     "breed": "Holland Lop",
     "gender": "Male",
     "type": "Rabbit",
-    "image": "https://images.pexels.com/photos/19904640/pexels-photo-19904640/free-photo-of-a-small-rabbit-is-standing-on-a-black-background.jpeg"
+    "image": "https://images.pexels.com/photos/19904640/pexels-photo-19904640/free-photo-of-a-small-rabbit-is-standing-on-a-black-background.jpeg",
+    "bio": {
+      "description": "Thumper is a curious rabbit who loves hopping around and munching on fresh veggies.",
+      "specialNeeds": "None",
+      "history": "Born in the shelter after his mother was rescued."
+    }
   },
   {
     "id": 4,
@@ -33,7 +48,12 @@
     "breed": "Labrador Retriever",
     "gender": "Female",
     "type": "Dog",
-    "image": "https://images.pexels.com/photos/1790444/pexels-photo-1790444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/1790444/pexels-photo-1790444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Luna is a loyal and loving dog who enjoys swimming and playing with other pets.",
+      "specialNeeds": "None",
+      "history": "Rescued from a high-kill shelter."
+    }
   },
   {
     "id": 5,
@@ -42,7 +62,12 @@
     "breed": "Siamese",
     "gender": "Female",
     "type": "Cat",
-    "image": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/357141/pexels-photo-357141.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Mittens is a quiet and independent cat who loves cozying up in sunny spots.",
+      "specialNeeds": "Needs a quiet home with no other pets.",
+      "history": "Found as a stray near an abandoned warehouse."
+    }
   },
   {
     "id": 6,
@@ -51,7 +76,12 @@
     "breed": "Bengal",
     "gender": "Female",
     "type": "Cat",
-    "image": "https://images.pexels.com/photos/1108598/pexels-photo-1108598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/1108598/pexels-photo-1108598.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Cleo is an adventurous and intelligent cat who enjoys interactive toys and climbing.",
+      "specialNeeds": "None",
+      "history": "Rescued from an overcrowded shelter."
+    }
   },
   {
     "id": 7,
@@ -60,7 +90,12 @@
     "breed": "Beagle",
     "gender": "Female",
     "type": "Dog",
-    "image": "https://images.pexels.com/photos/54386/pexels-photo-54386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/54386/pexels-photo-54386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Bella is a sweet and friendly dog who loves sniffing trails and meeting new people.",
+      "specialNeeds": "None",
+      "history": "Rescued from a neglectful home."
+    }
   },
   {
     "id": 8,
@@ -69,7 +104,12 @@
     "breed": "Persian",
     "gender": "Male",
     "type": "Cat",
-    "image": "https://images.pexels.com/photos/4079248/pexels-photo-4079248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/4079248/pexels-photo-4079248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Shadow is a calm and regal cat who loves gentle grooming and lounging in quiet spaces.",
+      "specialNeeds": "Requires daily eye cleaning due to breed characteristics.",
+      "history": "Surrendered by a breeder who retired."
+    }
   },
   {
     "id": 9,
@@ -78,7 +118,12 @@
     "breed": "Bulldog",
     "gender": "Male",
     "type": "Dog",
-    "image": "https://images.pexels.com/photos/26150686/pexels-photo-26150686/free-photo-of-english-bulldog-dog-with-tongue-out.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/26150686/pexels-photo-26150686/free-photo-of-english-bulldog-dog-with-tongue-out.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Rocky is a charming and laid-back dog who enjoys short walks and lots of belly rubs.",
+      "specialNeeds": "Requires regular skin care due to sensitivity.",
+      "history": "Rescued from a puppy mill."
+    }
   },
   {
     "id": 10,
@@ -87,7 +132,12 @@
     "breed": "Ragdoll",
     "gender": "Female",
     "type": "Cat",
-    "image": "https://images.pexels.com/photos/29616976/pexels-photo-29616976/free-photo-of-close-up-portrait-of-a-blue-eyed-ragdoll-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/29616976/pexels-photo-29616976/free-photo-of-close-up-portrait-of-a-blue-eyed-ragdoll-cat.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Daisy is a playful and affectionate kitten who loves chasing feather toys and snuggling.",
+      "specialNeeds": "None",
+      "history": "Found abandoned in a cardboard box."
+    }
   },
   {
     "id": 11,
@@ -96,7 +146,12 @@
     "breed": "American Guinea Pig",
     "gender": "Male",
     "type": "Guinea Pig",
-    "image": "https://images.pexels.com/photos/7588704/pexels-photo-7588704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/7588704/pexels-photo-7588704.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Nibbles is a friendly and social guinea pig who loves munching on carrots and hay.",
+      "specialNeeds": "None",
+      "history": "Surrendered by a family unable to care for him."
+    }
   },
   {
     "id": 12,
@@ -105,7 +160,12 @@
     "breed": "Lionhead Rabbit",
     "gender": "Female",
     "type": "Rabbit",
-    "image": "https://images.pexels.com/photos/19958072/pexels-photo-19958072/free-photo-of-close-up-of-a-pet-rabbit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/19958072/pexels-photo-19958072/free-photo-of-close-up-of-a-pet-rabbit.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Fluffy is a gentle and curious rabbit who enjoys being petted and exploring her environment.",
+      "specialNeeds": "None",
+      "history": "Rescued from a backyard breeder."
+    }
   },
   {
     "id": 13,
@@ -114,7 +174,12 @@
     "breed": "German Shepherd",
     "gender": "Male",
     "type": "Dog",
-    "image": "https://images.pexels.com/photos/3709026/pexels-photo-3709026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/3709026/pexels-photo-3709026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Rex is a loyal and protective dog who loves learning new commands and playing fetch.",
+      "specialNeeds": "None",
+      "history": "Rescued from a neglectful owner."
+    }
   },
   {
     "id": 14,
@@ -123,7 +188,12 @@
     "breed": "Calico",
     "gender": "Female",
     "type": "Cat",
-    "image": "https://images.pexels.com/photos/29653823/pexels-photo-29653823/free-photo-of-portrait-of-a-curious-calico-cat-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/29653823/pexels-photo-29653823/free-photo-of-portrait-of-a-curious-calico-cat-outdoors.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Patches is a playful and curious cat who enjoys climbing and exploring her surroundings.",
+      "specialNeeds": "None",
+      "history": "Rescued from an abandoned house."
+    }
   },
   {
     "id": 15,
@@ -132,6 +202,11 @@
     "breed": "Dwarf Rabbit",
     "gender": "Male",
     "type": "Rabbit",
-    "image": "https://images.pexels.com/photos/19904639/pexels-photo-19904639/free-photo-of-a-rabbit-is-sitting-on-a-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+    "image": "https://images.pexels.com/photos/19904639/pexels-photo-19904639/free-photo-of-a-rabbit-is-sitting-on-a-black-background.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "bio": {
+      "description": "Snowball is a sweet and quiet rabbit who enjoys fresh greens and gentle cuddles.",
+      "specialNeeds": "None",
+      "history": "Born in the shelter."
+    }
   }
 ]
