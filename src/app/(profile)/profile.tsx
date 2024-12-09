@@ -6,13 +6,15 @@ import {
   View,
   Image,
   Button,
+  Pressable,
 } from "react-native";
 import React from "react";
 import { useEvent } from "expo";
 import { useVideoPlayer, VideoView } from "expo-video";
 
-import { useLocalSearchParams } from "expo-router";
-import { colors } from "../theme/colors";
+import { router, useLocalSearchParams } from "expo-router";
+import { colors } from "../../theme/colors";
+import FontAwesome5 from "@expo/vector-icons/FontAwesome5";
 
 //* DIMENSIONS //
 const { width, height } = Dimensions.get("screen");
@@ -58,9 +60,17 @@ const Profile = () => {
         <Text style={styles.story}>History: {story}</Text>
         <Text style={styles.need}>Special Needs: {need}</Text>
 
-        <View style={styles.controlsContainer}>
-          <Button title="Adopt Me" color={colors.blue} />
-        </View>
+        <Pressable
+          onPress={() => router.push("/(application)/infoPg1")}
+          style={styles.button}
+        >
+          <Text style={styles.buttonTxt}>Adopt Me</Text>
+          <FontAwesome5
+            name="hand-holding-heart"
+            size={20}
+            color={colors.loveTxt}
+          />
+        </Pressable>
       </View>
 
       {/* <View style={styles.controlsContainer}>
@@ -89,11 +99,22 @@ const styles = StyleSheet.create({
   video: {
     width: width,
     aspectRatio: 4 / 3,
-    backgroundColor: "pink",
   },
-  controlsContainer: {
-    marginTop: 'auto',
+  button: {
+    gap: 5,
     padding: 10,
+    marginHorizontal: 30,
+    marginTop: "auto",
+    borderRadius: 15,
+    flexDirection: "row",
+    alignItems: "flex-end",
+    justifyContent: "center",
+    backgroundColor: colors.blue,
+  },
+  buttonTxt: {
+    fontSize: 18,
+    fontWeight: "500",
+    color: colors.dark,
   },
   infoContnr: {
     flex: 1,
@@ -103,7 +124,7 @@ const styles = StyleSheet.create({
   name: {
     textAlign: "right",
     color: colors.white,
-    fontSize: 36,
+    fontSize: 38,
     fontWeight: "300",
   },
   breed: {

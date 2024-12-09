@@ -12,7 +12,7 @@ export const colors = {
   need: "#00A7E1", //Piction Blue
 
   likeTxt: "#FCAB10", //Orange
-  loveTxt: "#BD0F38", //Red (NCS) 
+  loveTxt: "#BD0F38", //Red (NCS)
   needTxt: "#1D3461", //Delft Blue
 
   grey: "#DCDCDC", //Platinum Grey
