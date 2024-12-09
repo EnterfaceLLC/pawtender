@@ -18,6 +18,7 @@ const SenderInfo = () => {
         <View style={styles.header}>
           <Text style={styles.head}>Let's get started</Text>
           <Text style={styles.subHead}>Adoption Profile</Text>
+          {/* <View style={styles.divider} /> */}
         </View>
         <View style={{ gap: 20 }}>
           <Input placeholder="first, last name" title="Primary Contact" />
@@ -71,5 +72,10 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: "500",
     color: colors.dark,
+  },
+  divider: {
+    borderWidth: StyleSheet.hairlineWidth,
+    borderColor: colors.white,
+    marginVertical: 10
   },
 });

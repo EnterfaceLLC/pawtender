@@ -8,6 +8,7 @@ import {
   Dimensions,
   StatusBar,
   Pressable,
+  SafeAreaView,
 } from "react-native";
 
 //* RN TINDER CARD //
@@ -74,7 +75,11 @@ export default function Welcome() {
   };
 
   return (
-    <View style={styles.wrapper}>
+    <SafeAreaView style={styles.wrapper}>
+      <View style={styles.titleContnr}>
+        <Text style={styles.entity}>Helping Hands Humane Society</Text>
+        <Text style={styles.title}><Text style={{color: colors.love}}>Fur</Text>Ever Home</Text>
+      </View>
       {pets.map((item, index) => {
         return (
           <View
@@ -161,8 +166,8 @@ export default function Welcome() {
         );
       })}
 
-      <StatusBar barStyle={"light-content"} />
-    </View>
+      <StatusBar backgroundColor={colors.dark} barStyle={"light-content"} />
+    </SafeAreaView>
   );
 }
 
@@ -206,6 +211,20 @@ const styles = StyleSheet.create({
     bottom: 0,
     padding: 15,
     position: "absolute",
+  },
+  titleContnr: {
+    marginTop: 10,
+    alignSelf: "center",
+    alignItems: "center",
+  },
+  entity: {
+    fontSize: 12,
+    color: colors.grey,
+  },
+  title: {
+    fontSize: 30,
+    fontWeight: "500",
+    color: colors.blue,
   },
   name: {
     fontSize: 34,
